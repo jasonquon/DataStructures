@@ -1,0 +1,32 @@
+*******************************************
+Jason Quon	        0969675
+CIS*2520	    	    Assignment One
+October 11, 2017		jquon@uoguelph.ca
+*******************************************
+
+********************
+Program Description
+********************
+ Program simulates traffic through a stop light given data from a text file
+ test1.txt tests a car turning left when the light turns yellow
+ test2.txt tests a car turning right when the light turns yellow
+ Both text files test for a variety of different arrival times in all directions
+
+************
+Compilation
+************
+ To compile this code:
+ make main
+ make testMain
+
+ To run simulation:
+ bin/main assets/"anyFile.txt"
+
+ To run the testing program:
+ bin/testMain assets/testMain.txt - testing uses this specific text file
+
+ make clean removes executable files
+
+************************************
+Known Limitations, Issues and Errors
+************************************
