@@ -1,0 +1,43 @@
+*******************************************
+Jason Quon	        0969675
+CIS*2520	    	    Assignment Three
+November 14, 2017		jquon@uoguelph.ca
+*******************************************
+
+********************
+Program Description
+********************
+ Program spell checks a user provided file by implementing
+ a hash table dictionary from a file received from the command line.
+
+************
+Compilation
+************
+ To compile this code:
+ make main
+ make testMain
+
+ To run simulation:
+ bin/main assets/"anyFile.txt"
+
+ To run the testing program:
+ bin/testMain
+
+ make clean removes executable files
+
+***************************************
+Hash Function and Collision Resolution
+***************************************
+The key value is created by using the bitwise operator to shift the
+bits 8 to the left then adding the ascii value of each character.
+The table index is created by finding the remainder of key / size of table.
+Although this hash creates a reasonable spread, there is still the occasional
+collision. Separate chaining is used for collision resolution. If a key returns
+the same index as another key, the new node becomes the front of the collision
+list. (ie. the new node now points to the pre-existing value in the given index.)
+This creates a "chain" of nodes with the same index that can still be identified
+by their unique integer key.
+
+************************************
+Known Limitations, Issues and Errors
+************************************
