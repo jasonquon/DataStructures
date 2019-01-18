@@ -7,7 +7,7 @@ October 11, 2017		jquon@uoguelph.ca
 ********************
 Program Description
 ********************
- Program simulates traffic through a stop light given data from a text file
+ Program returns timing data from a simulated traffic light using given data from a text file
  test1.txt tests a car turning left when the light turns yellow
  test2.txt tests a car turning right when the light turns yellow
  Both text files test for a variety of different arrival times in all directions
